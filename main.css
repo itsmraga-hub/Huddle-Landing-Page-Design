@@ -1,0 +1,374 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+
+### Neutral
+
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 600
+
+### Body, Call-to-actions
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/) */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--poppins);
+}
+
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --Pale: hsl(193, 100%, 96%);
+    --Dark: hsl(192, 100%, 9%);
+    --Blue: hsl(208, 11%, 55%);
+    --pfont: 18px;
+    --opensans: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+section {
+    background-color: var(--Pale);
+    background-image: url("images/bg-hero-desktop.svg");
+    padding: 40px;
+}
+
+p {
+    font-family: var(--opensans);
+    font-size: var(--pfont);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.herocontent {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 100px;
+    padding: 40px;
+}
+
+.herocontent img {
+    height: auto;
+    width: 600px;
+}
+
+.content {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.content h1 {
+    margin-bottom: 10px;
+}
+
+.content button {
+    margin: 60px 0px 0px 30px;
+}
+
+img {
+    height: auto;
+    width: 400px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    /* padding-right: 50px; */
+    padding-left: 40px;
+}
+
+.logo img {
+    height: 20px;
+    width: 150px;
+}
+
+button {
+    background-color: var(--pink);
+    padding: 15px 50px;
+    border: 0px;
+    border-radius: 50px;
+    color: var(--Pale);
+    font-size: var(--pfont);
+    cursor: pointer;
+    transition: width 1s;
+}
+
+button:hover {
+    width: 300px;
+}
+
+.try {
+    /* class for header button which is white */
+    background-color: white;
+    border: 1px solid var(--Pale);
+    color: var(--Dark);
+    padding: 10px 40px;
+}
+
+.grid {
+    /* background-color: var(--Pale); */
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+}
+
+.illustration {
+    background-color: white;
+    padding: 0px 20px 0px 80px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 10px;
+    margin: 0px 100px;
+    display: flex;
+}
+
+.illustration p {
+    font-size: var(--pfont);
+    margin-top: 20px;
+}
+
+.illustration .content {
+    padding: 0px 50px;
+    text-align: left;
+}
+
+
+.growtogether {
+    margin-top: 30px;
+}
+
+.users {
+    margin-bottom: 30px;
+}
+
+.build {
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 5px;
+    padding: 50px 50px;
+    position: relative;
+    /* right: 70%; */
+    top: -100px;
+    margin: auto;
+    height: auto;
+    width: 650px;
+    color: var(--Dark);
+}
+
+.build button {
+    margin: 30px 0px 0px 100px;
+}
+
+
+footer {
+    background-color: var(--Dark);
+    color: var(--Pale);
+    margin-top: 180px;
+    padding-bottom: 30px;
+}
+
+.footer .info .inform img {
+    max-height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.footer {
+    margin: 0px 100px 20px 100px;
+    display: grid;
+    grid-template-columns: 400px auto auto auto;
+    gap: 50px;
+}
+
+.footer .info .inform {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.footer .info .logo {
+    padding-left: 0;
+    filter: brightness(0) invert(1);   
+}
+
+/* filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(200%);
+filter: drop-shadow(16px 16px 20px blue);
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%);
+filter: sepia(60%); */
+
+.footer li {
+    list-style: none;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Pale);
+}
+
+.fa {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.copy {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media  screen and (max-width: 375px) {
+    section {
+        padding: 20px 0px 0px 0px;
+    }
+    .hero .logo {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo {
+        padding-right: 0px;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    .herocontent {
+        padding: 0px 20px 0px 20px;
+        display: grid;
+        grid-template-columns: 375px;
+    }
+
+    .herocontent .content {      
+        padding: 0;
+        text-align: center;
+    }
+    .content {
+        margin: 30px 40px 0px 20px;
+    }
+
+    .mockup {
+        margin: auto;
+    }
+    .mockup img {
+        width: 330px;
+    }
+
+    .grid {
+        width: 100%;
+    }
+
+    .illustration {
+        margin: 15px;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .illustration .content {
+        text-align: center;
+    }
+
+    #conversations {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .build {
+        padding-bottom: 30px;
+        width: 90%;
+        font-size: 7px;
+    }
+    .build button {
+        width: auto;
+        font-size: 8px;
+        margin: 25px 0px 0px 30px;
+    }
+
+    .footer {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 375px;
+        gap: 0;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .info {
+        width: 375px;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+
+    .footer .info .logo, .inform {
+        width: 90%;
+    }
+
+    .fa {
+        width: 20%;
+    }
+
+    .footer .fa {
+        margin: auto;
+    }
+
+    .copy p {
+        margin-right: 40px;
+        text-align: center;
+        font-size: 14px;
+    }
+}
